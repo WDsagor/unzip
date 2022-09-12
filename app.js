@@ -30,7 +30,7 @@
                  });
              }, function (e) {
                  $result.append($("<div>", {
-                     "class" : "alert alert-danger",
+                     "class" : "alert alert-danger ",
                      text : "Error reading " + f.name + ": " + e.message
                  }));
              });
@@ -69,7 +69,6 @@
      }, 1000);
  
      setTimeout(function () {
-         console.log("click")
          clicked();
      }, 1000);
  }
@@ -113,7 +112,6 @@
  
  function submitMe(){ 
      var result = $('#tree').jstree('get_selected');
-         console.log('result',result)
  
      for(let x = 0;x<result.length;x++){
      
